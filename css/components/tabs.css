@@ -1,0 +1,40 @@
+
+
+
+
+.tabs{
+    display: grid;
+    flex-direction: column;
+}
+
+input[type="radio"]{
+    display: none;
+    
+}
+
+label {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+}
+
+
+label:hover {
+    background-color: #ddd;
+}
+
+.tabs-content{
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+
+#tab-me:checked ~ .tabs-content #tab-me-content, 
+#tab-projects:checked ~ .tabs-content #tab-projects-content {
+     display: block;
+}
+
+.tabs-content div {
+    display: none;
+}
