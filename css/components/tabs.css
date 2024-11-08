@@ -1,40 +1,17 @@
 
-
-
-
-.tabs{
-    display: grid;
-    flex-direction: column;
-}
-
-input[type="radio"]{
+.tabs input[type="radio"]{
     display: none;
-    
 }
 
-label {
+.tabs label { 
+    display: inline-block;
     padding: 10px;
+    margin-right: 5px;
+    min-width: 15%;
     cursor: pointer;
-    background-color: #eee;
-    color: black;
-}
-
-
-label:hover {
-    background-color: #ddd;
+    text-align: center;
 }
 
 .tabs-content{
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
-
-#tab-me:checked ~ .tabs-content #tab-me-content, 
-#tab-projects:checked ~ .tabs-content #tab-projects-content {
-     display: block;
-}
-
-.tabs-content div {
-    display: none;
+    padding: 10px; 
 }

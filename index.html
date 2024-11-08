@@ -5,54 +5,64 @@
         <link rel="stylesheet" href="./css/main.css">
         <title> UrieLara </title>
     </head>
+
     <body> 
-
-        <header> <h1>Mi Página Web</h1></header>
-
-    <div class = "tabs"> 
-           
-                <input type="radio" id="tab-me" name="tab-group" checked>
-                <label for="tab-me">Sobre mí</label>
-           
-                <input type="radio" id="tab-projects" name="tab-group">
-                <label for="tab-projects">Proyectos</label>
+    <div class = "tabs">
+        <div class="fixed-container">
+            <input type="radio" id="tab-home" name="tab-group" checked>
+            <label for="tab-home"><a href="#tab-home-content" class="tab-link">Inicio</a></label>
+    
+            <input type="radio" id="tab-projects" name="tab-group">
+            <label for="tab-projects"><a href="#tab-projects-content" class="tab-link">Proyectos</a></label>
             
-            
+            <input type="radio" id="tab-me" name="tab-group">
+            <label for="tab-me"><a href="#tab-me-content" class="tab-link">Sobre mí</a></label>            
+        </div> 
+          
         <div class="tabs-content">
-            <div id="tab-me-content">
-                    <section> 
+            <div id="tab-home-content"> 
+                    <div>
                         <h1> Uriel Lara Castro </h1>
-                        <h2> Programador .NET </h2>
-                        <h3> laracastrouriel@gmail.com </h3>
-                    </section>
-            
+                        <h2> Desarrollador ASP.NET </h2>
+
+                        <div class="email">
+                            <a href="mailto:laracastrouriel@gmail.com"><img src="./assets/mail-icon-white.png" alt="email icon" style="width: 25px;"></a>
+                            <a href="mailto:laracastrouriel@gmail.com">laracastrouriel@gmail.com</a>
+                            <button onclick="CopyText()"><img src="./assets/copy-icon-white.png" alt="copy icon"></button>
+                            <p id="hide-text" class="hide" style="font-size: 15px;">Copiado 👍</p>
+                        </div>
+                        
+                        
+                        <div>
+                            <a href="https://www.linkedin.com/in/uriel-lara-castro/" target="_blank" class="button"><img src="./assets/linkedin-icon-white.png" alt="linkedin icon" class="icon">Linkedin</a>
+                            <a href="https://github.com/UrieLara" target="_blank" class="button"><img src="./assets/github-icon-white.png" alt="github icon" class="icon">GitHub</a>
+                            <button onclick="downloadDocument('CV_Uriel Lara Castro.pdf')"  class="button"><img src="./assets/download-icon-white.png" alt="download icon" class="icon">Descargar CV</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img class="photo" src="./assets/fotocode.png">  
+                        
+                        <h3>Habilidades </h3>
+                           <p> Skills </p>
+                    </div>
+
+            </div>
+
+            <div id="tab-projects-content">
+                Contenido de pestaña de proyectos
+            </div>
+
+            <div id="tab-me-content">   
                     <section>
                         <h3> Sobre mí</h3>
                         <p> Escribir sobre mí... (pendiente) </p>
                     </section>
-            
-                    <section> 
-                        <img class="photo" src="./assets/fotocode-circle.png" width="300" height="300">
-                        linkedin
-                        github
-                        CV descargable
-                    </section>
-            
-                    <section>
-                        <h3> Habilidades </h3>
-                        Agregar skills
-                    </section>
-               
-            </div>
-
-            <div id="tab-projects-content" class="tabs-content">
-                Contenido de pestaña de proyectos
-            </div>
+            </div> 
         </div>
+    
+    </div> 
 
-    </div>
-
-            
-
+    <script src="./index.js"></script>
     </body>
 </html>

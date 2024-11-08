@@ -1,0 +1,29 @@
+.email button{ 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+    margin: 10px;
+} 
+
+.button {
+    display: inline-flex;
+    padding: 10px 20px;  
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.hide{
+    display: none;
+}
+
+   

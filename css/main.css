@@ -1,2 +1,4 @@
 @import 'components/tabs.css';
-@import 'themes/dark.css';
+@import 'themes/purple.css';
+@import 'layouts/body.css';
+@import 'components/buttons.css';
