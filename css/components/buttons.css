@@ -1,14 +1,10 @@
 .email button{ 
     padding: 5px 10px; 
-    border: none; 
     border-radius: 15px; 
-    cursor: pointer; 
-    font-size: 16px;
-    transition: background-color 0.3s ease; 
     margin: 10px;
 } 
 
-.button {
+.btn {
     display: inline-flex;
     padding: 10px 20px;  
     margin: 5px;
@@ -24,6 +20,18 @@
 
 .hide{
     display: none;
+    text-align: center;
 }
 
-   
+
+@media (max-width: 768px) { 
+
+    .btn{
+        padding: 3px 8px;  
+        font-size: 70%;
+    }
+
+    .email button{
+        margin: 3px;
+    }
+}
