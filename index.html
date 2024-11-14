@@ -10,18 +10,19 @@
     <div class = "tabs">
         <div class="fixed-container">
             <input type="radio" id="tab-home" name="tab-group" checked>
-            <label for="tab-home"><a href="#tab-home-content" class="tab-link">Inicio</a></label>
+            <label for="tab-home" onclick="scrollToElement('tab-home-content', 100)"><span class="tab-link" >Inicio</span></label>
+            
     
             <input type="radio" id="tab-projects" name="tab-group">
-            <label for="tab-projects"><a href="#tab-projects-content" class="tab-link">Proyectos</a></label>
+            <label for="tab-projects" onclick="scrollToElement('tab-projects-content', 100)"><span class="tab-link">Proyectos</span></label>
             
             <input type="radio" id="tab-me" name="tab-group">
-            <label for="tab-me"><a href="#tab-me-content" class="tab-link">Sobre mí</a></label>            
+            <label for="tab-me" onclick="scrollToElement('tab-me-content', 100)"><span class="tab-link">Sobre mí</span></label>     
         </div> 
           
         <div class="tabs-content">
             <div id="tab-home-content"> 
-                    <div>
+                    <div id="presentation">
                         <h1> Uriel Lara Castro </h1>
                         <h2> Desarrollador ASP.NET </h2>
 
@@ -32,33 +33,113 @@
                             <p id="hide-text" class="hide" style="font-size: 15px;">Copiado 👍</p>
                         </div>
                         
-                        
                         <div class="links">
                             <a href="https://www.linkedin.com/in/uriel-lara-castro/" target="_blank" class="btn"><img src="./assets/linkedin-icon-white.png" alt="linkedin icon" class="icon">Linkedin</a>
                             <a href="https://github.com/UrieLara" target="_blank" class="btn"><img src="./assets/github-icon-white.png" alt="github icon" class="icon">GitHub</a>
                             <button onclick="downloadDocument('CV_Uriel Lara Castro.pdf')"  class="btn"><img src="./assets/download-icon-white.png" alt="download icon" class="icon">Descargar CV</button>
                         </div>
                     </div>
-                    
-                    <div class="skills">
-                        <img class="photo" src="./assets/fotocode.png">  
-                        
-                        <h3>Habilidades</h3>
-                           <p> Skills </p>
+                                         
+                    <div class="photo-me">
+                            <img class="photo" src="./assets/fotome.png">        
                     </div>
-
             </div>
 
             <div id="tab-projects-content">
                 <h2> Proyectos </h2>
-                
+                Contenido de proyectos
+            </div>
+
+            <div>
+                <h3>Tecnologías</h3>
+                <div class="subgrid4x2">
+            
+                    <div>
+                        <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="logotech">
+                        <span>C#</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/netcore.png" alt="logo net core" class="logotech">
+                        <span>.NET</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/aspnet.png" alt="logo asp.net" class="logotech">
+                        <span>ASP.NET</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/sql.png" alt="logo SQL" class="logotech">
+                        <span>SQL</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/html.png" alt="logo HTML" class="logotech">
+                        <span>HTML</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/css.png" alt="logo CSS" class="logotech">
+                        <span>CSS</span>
+                    </div>
+                </div>  
             </div>
 
             <div id="tab-me-content">   
-                    <section>
-                        <h2> Sobre mí</h2>
-                        <p> Escribir sobre mí... (pendiente) </p>
-                    </section>
+                <section>
+                    <h2> Sobre mí </h2>
+                    <p>Soy Uriel, un ingeniero apasionado por la tecnología que ha encontrado en la programación 
+                        una manera divertida de innovar, optimizar y hacer más eficientes los procesos.
+                        <br>Con una sólida formación en Ingeniería Mecatrónica y Sistemas Computacionales, 
+                        he desarrollado una amplia gama de habilidades técnicas, desde la automatización 
+                        industrial hasta el desarrollo web.
+
+                        <br>Mi experiencia en el sector aeroportuario me ha proporcionado una base sólida en 
+                        la resolución de problemas y el trabajo en equipo. 
+                        Actualmente, estoy enfocado en perfeccionar mis habilidades en desarrollo web, 
+                        con un especial interés en ASP.NET, C# y SQL.
+                        
+                        <br>Estoy emocionado por aplicar mis conocimientos en proyectos desafiantes y colaborar con equipos innovadores. 
+                        <br>Si buscas un desarrollador con una mente curiosa y una gran capacidad para aprender, ¡no dudes en contactarme!</p>
+                </section>
+
+                <section>
+                    <h2> Experiencia </h2>
+                    <p>
+                        <b>Agente de Viajes <i>(Remoto)</i></b><br>
+                        <i>Adventure Holidays • Junio 2023 - Actual</i>
+                        <ul>
+                            <li>Desarrollé soluciones para automatizar el seguimiento de clientes mediante macros de Excel, 
+                                mejorando la eficiencia del proceso en un 20%.</li>
+                            <li>Planifico experiencias personalizadas para clientes, 
+                                demostrando habilidades en análisis de datos y atención al detalle para ofrecer soluciones precisas.</li>
+                            <li>Gestiono las relaciones con proveedores y clientes, 
+                                mitigando riesgos al asegurar la puntualidad y calidad de las reservas, 
+                                lo que fortalece mis habilidades de gestión y comunicación.</li>
+                        </ul>
+                    </p>
+                    <p> <b>Técnico de Mantenimiento </b><br>
+                        <i>Beumer Group, México • Junio 2022 - Junio 2023</i> 
+                        <ul>
+                        <li>Reduje el tiempo de inactividad en sistemas automatizados mediante 
+                            la identificación y resolución de problemas técnicos de manera rápida y efectiva.</li>
+                        <li>Programé y optimicé sistemas automatizados utilizando PLC Siemens, 
+                            mejorando el rendimiento de los procesos.</li>
+                        <li>Realicé mantenimiento preventivo y correctivo de sistemas, 
+                            asegurando su funcionalidad a largo plazo y mejorando la fiabilidad operativa.</li>
+                        </ul>
+                        
+                    </p>
+                    <p > <b> Ingeniero de control </b><br>
+                        <i>AR Mechatronics, México • Mayo 2021 - Junio 2022</i> 
+                        <ul>
+                            <li>Optimicé sistemas automatizados mediante programación de PLC Siemens, 
+                                lo que incrementó la productividad y eficiencia operativa.
+                            <li>Implementé soluciones de mantenimiento preventivo y correctivo, 
+                            asegurando la continuidad de los procesos productivos.</li>
+                            <li>Gestioné inventarios y coordinación de logística para asegurar la disponibilidad de materiales y equipos, 
+                            lo que fortaleció mis habilidades de organización y trabajo en equipo.</li>
+                            <li>Gestioné los trámites para la incorporación de nuevos proveedores y empleados, 
+                                asegurando el cumplimiento de las normativas de seguridad del sitio de trabajo.</li>
+                        </ul>
+                    </p>
+                </section>
             </div> 
         </div>
     

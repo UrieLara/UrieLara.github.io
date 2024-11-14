@@ -1,4 +1,4 @@
-const myCV = "assets/docs/CV prueba.pdf";
+const myCV = "assets/docs/CV.pdf";
 
 function CopyText() { 
     const text = "laracastrouriel@gmail.com"; 
@@ -27,3 +27,20 @@ function showText() {
     link.click(); 
     document.body.removeChild(link); 
 }
+
+function scrollToElement(elementId, offset = 0) {
+    const currentPosition = window.scrollY;
+    const element = document.getElementById(elementId);
+    
+    if (element) {
+      const elementPosition = element.offsetTop;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth'
+      });
+      return currentPosition;
+    } else {
+      console.error('El elemento con ID "${elementId}" no existe.');
+      return null;
+    }
+  }

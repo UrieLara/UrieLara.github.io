@@ -3,7 +3,7 @@
     display: none;
 }
 
-.tabs label { 
+.fixed-container label { 
     display: inline-block;
     padding: 10px;
     margin-right: 5px;
@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 768px) { 
-    .tabs label { 
+    .tab-link { 
         padding: 8px;
         font-size: 15px;
         min-width: 10%;

@@ -22,13 +22,15 @@ body{
     color: var(--color-background-2);
 }
 
-.tabs label { 
+.fixed-container label { 
     background-color:var(--color-text);
     transition: color 0.3s ease, text-decoration 0.3s ease;
+    
 }
 
-    label:hover {
-        background-color: var(--color-hover);
+    .fixed-container label:hover {
+         background-color: var(--color-hover);
+         
     }
 
 .email a, .email button{
