@@ -75,7 +75,7 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
-.btn{
+.btn, .btnfooter{
     background-color: var(--color-button);
     color: white;
 }
@@ -83,3 +83,7 @@ body{
     .btn:hover {
         background-color: var(--color-hover);
     }
+
+hr {
+    border: --color-text;
+}
