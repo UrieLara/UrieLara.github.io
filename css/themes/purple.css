@@ -87,3 +87,16 @@ body{
 hr {
     border: --color-text;
 }
+
+
+.modal { 
+    background-color: var(--color-text); 
+} 
+
+button.prev, button.next { 
+    color: var(--color-button); 
+}
+
+.close{
+color: var(--color-button);
+}

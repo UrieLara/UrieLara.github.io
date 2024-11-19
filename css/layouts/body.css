@@ -44,7 +44,7 @@ h1{
 }
 
 h2{
-    text-align: center;
+    padding-left: 8%;
     font-size: 2rem;
     margin: 3rem 0px 1.5rem 0px;
 }
@@ -80,23 +80,28 @@ a {
     text-decoration: none;
 }
 
-.subgrid4x2 {
+.subgrid6x2 {
     display: grid;
     grid-template-columns: repeat(6, min-content);
     justify-items: center;
     justify-content: center;
   }
 
-  .subgrid4x2 div {
+  .subgrid6x2 div {
     display: grid;
     align-items: center;
     justify-items: center;
     margin-right: 2.5rem;
 }
 
-p, ul {
+p {
     text-align: justify;
     padding: 0px 10% 0px 10%;
+}
+
+ul{
+    text-align: justify;
+    padding:0px 10% 0px 12%;
 }
 
 hr {
@@ -132,7 +137,7 @@ hr {
         margin: 5px 0px 5px 5px;
     }
 
-    .subgrid4x2 div {
+    .subgrid6x2 div {
         margin-right: 1rem;
     }
 
