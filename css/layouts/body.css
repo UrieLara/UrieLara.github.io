@@ -94,6 +94,19 @@ a {
     margin-right: 2.5rem;
 }
 
+.info-project{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-project p{
+    font-size: 1rem;
+    padding: 0px;
+}
+
+
 p {
     text-align: justify;
     padding: 0px 10% 0px 10%;

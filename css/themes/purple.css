@@ -75,7 +75,7 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
-.btn, .btnfooter{
+.btn, .btnfooter, .btn-small{
     background-color: var(--color-button);
     color: white;
 }
