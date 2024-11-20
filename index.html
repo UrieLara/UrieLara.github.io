@@ -2,41 +2,49 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/> 
-        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./css/main.css">
         <title> UrieLara </title>
     </head>
+
+    <header> 
+        <div id="language-selector"> 
+            <select id="language-dropdown" onchange="setLanguage(this.value)"> 
+                <option value="es">ES</option> 
+                <option value="en">EN</option> 
+            </select>
+        </div>
+    </header>
 
     <body> 
     <div class = "tabs">
         <div class="fixed-container">
             <input type="radio" id="tab-home" name="tab-group" checked>
-            <label for="tab-home" onclick="scrollToElement('tab-home-content', 100)"><span class="tab-link" >Inicio</span></label>
+            <label for="tab-home" onclick="scrollToElement('tab-home-content', 100)"><span class="tab-link" id="tab-home-text">Inicio</span></label>
             
-    
             <input type="radio" id="tab-projects" name="tab-group">
-            <label for="tab-projects" onclick="scrollToElement('tab-projects-content', 100)"><span class="tab-link">Proyectos</span></label>
+            <label for="tab-projects" onclick="scrollToElement('tab-projects-content', 100)"><span class="tab-link" id="tab-projects-text">Proyectos</span></label>
             
             <input type="radio" id="tab-me" name="tab-group">
-            <label for="tab-me" onclick="scrollToElement('tab-me-content', 100)"><span class="tab-link">Sobre mí</span></label>     
+            <label for="tab-me" onclick="scrollToElement('tab-me-content', 100)"><span class="tab-link" id="tab-me-text">Sobre mí</span></label>     
         </div> 
           
         <div class="tabs-content">
             <div id="tab-home-content"> 
                     <div id="presentation">
                         <h1> Uriel Lara Castro </h1>
-                        <h2 class="subtitle"> Desarrollador Web Jr </h2>
+                        <h2 class="subtitle" id="profession-text"> Desarrollador Web Jr </h2>
 
                         <div class="email">
                             <a href="mailto:laracastrouriel@gmail.com" class="btn"><img src="./assets/mail-icon-white.png" alt="email icon" style="width: 25px;">
                                 <span style="margin-left: 8px;"></span>laracastrouriel@gmail.com</a>
                             <button onclick="CopyText()" class="btn"><img src="./assets/copy-icon-white.png" alt="copy icon"></button>
-                            <p id="hide-text" class="hide" style="font-size: 15px;">Copiado 👍</p>
+                            <p id="hide-text" class="hide" style="font-size: 15px;" id="copy-email-text">Copiado 👍</p>
                         </div>
                         
                         <div class="links">
                             <a href="https://www.linkedin.com/in/uriel-lara-castro/" target="_blank" class="btn"><img src="./assets/linkedin-icon-white.png" alt="linkedin icon" class="icon">Linkedin</a>
                             <a href="https://github.com/UrieLara" target="_blank" class="btn"><img src="./assets/github-icon-white.png" alt="github icon" class="icon">GitHub</a>
-                            <button onclick="downloadDocument('CV_Uriel Lara Castro.pdf')"  class="btn"><img src="./assets/download-icon-white.png" alt="download icon" class="icon">Descargar CV</button>
+                            <button onclick="downloadDocument('CV Uriel Lara Castro.pdf')"  class="btn"><img src="./assets/download-icon-white.png" alt="download icon" class="icon"><span id="download-cv-text">Descargar CV</span></button>
                         </div>
                     </div>
                                          
@@ -46,21 +54,21 @@
             </div>
     <br><hr><br>
             <div id="tab-projects-content">
-                <h2> Proyectos </h2>
+                <h2 id="title-projects-text"> Proyectos </h2>
                 <div id="projects">
                     <section id="project1">
-                        <img class="img-project" src="./assets/img_projects/building.png" alt="en construcción">
-                        <h4>Tienda Online de Electrónica</h4>
+                        <img class="img-project" src="./assets/img_projects/building.png" alt="imagen de proyecto">
+                        <h4 id="project1-title-text">Tienda Online de Electrónica</h4>
                         <div class="info-project">
-                            <p>En construcción... </p>
-                            <a href="https://github.com/UrieLara/ElectroShop.git" target="_blank"><img src="./assets/github-icon-white.png" alt="link icon" class="icon"></a>
+                            <p id="project1-p-text">En desarrollo... </p>
+                            <a href="https://github.com/UrieLara/ElectroShop.git" target="_blank"><img src="./assets/github-icon-white-circle.png" alt="link icon" class="btnlink icon"></a>
                         </div>
                     </section>
                 </div>
             </div>
 
             <br><div>
-                <h3>Tecnologías</h3>
+                <h3 id="tech-title-text">Tecnologías</h3>
                 <div class="subgrid6x2">
             
                     <div>
@@ -92,87 +100,29 @@
 
             <br><div id="tab-me-content">
                <section>
-                <h2> Sobre mí </h2>
-                    <p>Soy Uriel, un ingeniero apasionado por la tecnología que ha encontrado en la programación 
-                        una manera entretenida de innovar, optimizar y hacer más eficientes los procesos.
-                        <br>Con una sólida formación en Ingeniería Mecatrónica y Sistemas Computacionales, 
-                        he desarrollado una amplia gama de habilidades técnicas, desde la automatización 
-                        industrial hasta el desarrollo web.
-
-                        <br>Mi experiencia en el sector aeroportuario me ha proporcionado una base sólida en 
-                        la resolución de problemas y el trabajo en equipo. 
-                        Actualmente, estoy enfocado en perfeccionar mis habilidades en desarrollo web, 
-                        con un especial interés en ASP.NET, C# y SQL.
-                        
-                        <br><br>Estoy emocionado por aplicar mis conocimientos en proyectos desafiantes y colaborar con equipos innovadores. 
-                        <br>Si buscas un desarrollador con una mente curiosa y una gran capacidad para aprender, ¡no dudes en contactarme!</p>
+                <h2 id="about-me-title-text"> Sobre mí </h2>
+                    <p id="presentation-text">Presentación</p>
                 </section>
 
                 <section>
-                    <br><h2> Experiencia </h2>
-                    <p>
-                        <b>Agente de Viajes <i>(Remoto)</i></b><br>
-                        <i>Adventure Holidays • Junio 2023 - Actual</i>
-                        <ul>
-                            <li>Desarrollé soluciones para automatizar el seguimiento de clientes mediante macros de Excel, 
-                                mejorando la eficiencia del proceso en un 20%.</li>
-                            <li>Planifico experiencias personalizadas para clientes, 
-                                demostrando habilidades en análisis de datos y atención al detalle para ofrecer soluciones precisas.</li>
-                            <li>Gestiono las relaciones con proveedores y clientes, 
-                                mitigando riesgos al asegurar la puntualidad y calidad de las reservas, 
-                                lo que fortalece mis habilidades de gestión y comunicación.</li>
-                        </ul>
-                    </p>
-                    <p> <b>Técnico de Mantenimiento </b><br>
-                        <i>Beumer Group, México • Junio 2022 - Junio 2023</i> 
-                        <ul>
-                        <li>Reduje el tiempo de inactividad en sistemas automatizados mediante 
-                            la identificación y resolución de problemas técnicos de manera rápida y efectiva.</li>
-                        <li>Programé y optimicé sistemas automatizados utilizando PLC Siemens, 
-                            mejorando el rendimiento de los procesos.</li>
-                        <li>Realicé mantenimiento preventivo y correctivo de sistemas, 
-                            asegurando su funcionalidad a largo plazo y mejorando la fiabilidad operativa.</li>
-                        </ul>
-                        
-                    </p>
-                    <p > <b> Ingeniero de control </b><br>
-                        <i>AR Mechatronics, México • Mayo 2021 - Junio 2022</i> 
-                        <ul>
-                            <li>Optimicé sistemas automatizados mediante programación de PLC Siemens, 
-                                lo que incrementó la productividad y eficiencia operativa.
-                            <li>Implementé soluciones de mantenimiento preventivo y correctivo, 
-                            asegurando la continuidad de los procesos productivos.</li>
-                            <li>Gestioné inventarios y coordinación de logística para asegurar la disponibilidad de materiales y equipos, 
-                            lo que fortaleció mis habilidades de organización y trabajo en equipo.</li>
-                            <li>Gestioné los trámites para la incorporación de nuevos proveedores y empleados, 
-                                asegurando el cumplimiento de las normativas de seguridad del sitio de trabajo.</li>
-                        </ul>
-                    </p>
+                    <br><h2 id="experience-title-text"> Experiencia </h2>
+                    <p id="work1-text">Experiencia más actual</p>
+                    <p id="work2-text"> Penúltimo trabajo</p>
+                    <p id="work3-text"> Trabajo más antiguo </p>
                 </section>
                
                 <section>
-                    <br><h2> Certificados </h2>
+                    <br><h2 id="certificates-title-text"> Certificados </h2>
                     <div class="certificate-container">
                         <button class="prev" onclick="moveSlide(-1)">&#9664;</button>
                         <div class="certificate-slides" id="certificate-container"></div>
                         <button class="next" onclick="moveSlide(1)">&#9654;</button>
-                    </div>
-                    
-                    <div id="zoomModal" class="modal">
-                        <span class="close" onclick="closeZoom()">&times;</span>
-                        <img class="modal-content" id="zoomedImage">
-                    </div>                    
+                    </div>                   
                 </section>
 
                 <section>
-                    <br><h2> Educacion </h2>
-                    <p>
-                        <b>Ingeniería en Sistemas Computacionales</b><br>
-                        <i>Universidades Aliat, México • Mayo 2022 - Abril 2024</i>
-                    </p>
-                    <p> <b>Ingeniería en Mecatrónica </b><br>
-                        <i>Benemérita Universidad Autónoma de Puebla, México • Agosto 2015 - Diciembre 2020</i> 
-                    </p>
+                    <br><h2 id="education-title-text"> Educacion </h2>
+                    <p id="schools-text">Estudios</p>
                 </section>
             </div> 
         </div>
@@ -190,6 +140,8 @@
     </div>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="./js/certificates.js" defer></script>
+    <script src="./js/functions.js" defer></script>
+    <script src="./js/translate.js" defer></script>
     </body>
 </html>

@@ -1,9 +1,23 @@
+#language-selector{
+    position: absolute;
+    top: 0;
+    right: 1%;
+    cursor: pointer;
+   
+}
+
+#language-dropdown { 
+    padding: 1%; 
+    font-size: 1rem;
+    border: none;
+}
+
 .fixed-container{
     display: flex; 
     position: fixed; 
     top: 0; 
     left: 0; 
-    width: 100%; 
+    width: 90%; 
     z-index: 1000;
 }
 
@@ -24,7 +38,6 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    /*margin-right: 2.5rem;*/
 }
 
 #projects p{
@@ -114,7 +127,7 @@ p {
 
 ul{
     text-align: justify;
-    padding:0px 10% 0px 12%;
+    padding-right: 3%;
 }
 
 hr {
@@ -123,6 +136,10 @@ hr {
 }
 
 @media (max-width: 768px) { 
+
+    .fixed-container{
+        width: 80%; 
+    }
 
     body{
         margin: 1rem;

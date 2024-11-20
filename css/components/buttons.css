@@ -18,17 +18,13 @@
     transition: background-color 0.3s ease;
 }
 
-.btn-small{
+.btnlink{
     display: inline-flex;
-    padding: 0.7rem;  
-    margin: .5rem;
-    text-decoration: none;
-    text-align: center;
+    padding: 0.3rem;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 6px;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
     transition: background-color 0.3s ease;
 }
 

@@ -1,0 +1,46 @@
+{
+    "es": {
+      "tab-home-text": "Inicio",
+      "tab-projects-text": "Proyectos",
+      "tab-me-text": "Sobre mí",
+      "profession-text": "Desarrollador Web Jr",
+      "copy-email-text": "Copiado 👍",
+      "download-cv-text": "Descargar CV",
+      "title-projects-text": "Proyectos",
+      "project1-title-text": "Tienda Online de Electrónica",
+      "project1-p-text": "En desarrollo...",
+      "tech-title-text": "Tecnologías",
+      "about-me-title-text": "Sobre mí",
+      "presentation-text": "Soy Uriel, un ingeniero apasionado por la tecnología que ha encontrado en la programación una manera entretenida de innovar, optimizar y hacer más eficientes los procesos.<br>Con una sólida formación en Ingeniería Mecatrónica y Sistemas Computacionales, he desarrollado una amplia gama de habilidades técnicas, desde la automatización industrial hasta el desarrollo web.<br><br>Mi experiencia en el sector aeroportuario me ha proporcionado una base sólida en la resolución de problemas y el trabajo en equipo. Actualmente, estoy enfocado en perfeccionar mis habilidades en desarrollo web, con un especial interés en ASP.NET, C# y SQL.<br><br>Estoy emocionado por aplicar mis conocimientos en proyectos desafiantes y colaborar con equipos innovadores.<br>Si buscas un desarrollador con una mente curiosa y una gran capacidad para aprender, ¡no dudes en contactarme!",
+      "experience-title-text": "Experiencia",
+      "work1-text": "<b>Agente de Viajes <i>(Remoto)</i></b><br><i>Adventure Holidays • Junio 2023 - Actual</i><ul><li>Desarrollé soluciones para automatizar el seguimiento de clientes mediante macros de Excel, mejorando la eficiencia del proceso en un 20%.</li><li>Planifico experiencias personalizadas para clientes, demostrando habilidades en análisis de datos y atención al detalle para ofrecer soluciones precisas.</li><li>Gestiono las relaciones con proveedores y clientes, mitigando riesgos al asegurar la puntualidad y calidad de las reservas, lo que fortalece mis habilidades de gestión y comunicación.</li></ul>",
+      "work2-text": "<b>Técnico de Mantenimiento </b><br><i>Beumer Group, México • Junio 2022 - Junio 2023</i> <ul><li>Reduje el tiempo de inactividad en sistemas automatizados mediante la identificación y resolución de problemas técnicos de manera rápida y efectiva.</li><li>Programé y optimicé sistemas automatizados utilizando PLC Siemens, mejorando el rendimiento de los procesos.</li><li>Realicé mantenimiento preventivo y correctivo de sistemas, asegurando su funcionalidad a largo plazo y mejorando la fiabilidad operativa.</li></ul>",
+      "work3-text": "<b>Ingeniero de control</b><br><i>AR Mechatronics, México • Mayo 2021 - Junio 2022</i> <ul><li>Optimicé sistemas automatizados mediante programación de PLC Siemens, lo que incrementó la productividad y eficiencia operativa.</li><li>Implementé soluciones de mantenimiento preventivo y correctivo, asegurando la continuidad de los procesos productivos.</li><li>Gestioné inventarios y coordinación de logística para asegurar la disponibilidad de materiales y equipos, lo que fortaleció mis habilidades de organización y trabajo en equipo.</li><li>Gestioné los trámites para la incorporación de nuevos proveedores y empleados, asegurando el cumplimiento de las normativas de seguridad del sitio de trabajo.</li></ul>",
+      "certificates-title-text": "Certificados",
+      "education-title-text": "Educacion",
+      "schools-text": "<b>Ingeniería en Sistemas Computacionales</b><br><i>Universidades Aliat, México • Mayo 2022 - Abril 2024</i><br><br><b>Ingeniería en Mecatrónica</b><br><i>Benemérita Universidad Autónoma de Puebla, México • Agosto 2015 - Diciembre 2020</i>"
+    },
+    "en": {
+      "tab-home-text": "Home",
+      "tab-projects-text": "Projects",
+      "tab-me-text": "About me",
+      "profession-text": "Web Developer Jr",
+      "copy-email-text": "Copied 👍",
+      "download-cv-text": "Download CV",
+      "title-projects-text": "Projects",
+      "project1-title-text": "Online Electronics Shop",
+      "project1-p-text": "In development...",
+      "tech-title-text": "Technologies",
+      "about-me-title-text": "About me",
+      "presentation-text": "I'm Uriel, an engineer passionate about technology who has found programming to be an enjoyable way to innovate, optimize, and make processes more efficient.<br>With a solid background in Mechatronics Engineering and Computer Systems, I have developed a broad range of technical skills, from industrial automation to web development.<br><br>My experience in the airport sector has provided me with a strong foundation in problem-solving and teamwork. Currently, I am focused on honing my web development skills, with a particular interest in ASP.NET, C# and SQL.<br><br>I'm excited to apply my knowledge to challenging projects and collaborate with innovative teams.<br>If you're looking for a developer with a curious mind and a great capacity to learn, don't hesitate to contact me!",
+      "experience-title-text": "Work Experience",
+      "work1-text": "<b>Travel Agent <i>(Remote)</i></b><br><i>Adventure Holidays • June 2023 - Present</i><ul><li>Developed solutions to automate client tracking using Excel macros, improving process efficiency by 20%.</li><li>Planned personalized experiences for clients, demonstrating skills in data analysis and attention to detail to offer precise solutions.</li><li>Managed relationships with suppliers and clients, mitigating risks by ensuring the timeliness and quality of bookings, which strengthens my management and communication skills.</li></ul>",
+      "work2-text": "<b>Maintenance Technician</b><br><i>Beumer Group, Mexico • June 2022 - June 2023</i><ul><li>Reduced downtime in automated systems by quickly and effectively identifying and resolving technical issues.</li><li>Programmed and optimized automated systems using Siemens PLCs, improving process performance.</li><li>Conducted preventive and corrective maintenance of systems, ensuring long-term functionality and improving operational reliability.</li></ul>",
+      "work3-text": "<b>Control Engineer</b><br><i>AR Mechatronics, Mexico • May 2021 - June 2022</i> <ul><li>Optimized automated systems by programming Siemens PLCs, which increased productivity and operational efficiency.</li><li>Implemented preventive and corrective maintenance solutions, ensuring the continuity of production processes.</li><li>Managed inventories and logistics coordination to ensure the availability of materials and equipment, strengthening my organizational and teamwork skills.</li><li>Handled procedures for the integration of new suppliers and employees, ensuring compliance with workplace safety regulations.</li></ul>",
+      "certificates-title-text": "Certificates",
+      "education-title-text": "Education",
+      "schools-text": "<b>Computer Systems Engineering</b><br><i>Universidades Aliat, Mexico • May 2022 - April 2024</i><br><br><b>Mechatronics Engineering</b><br><i>Benemerita Universidad Autonoma de Puebla, Mexico • August 2015 - December 2020</i>"
+
+    }
+}
+  
