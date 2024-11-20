@@ -6,6 +6,7 @@
 .fixed-container label { 
     display: inline-block;
     padding: 10px;
+    border-radius: 0 0 5px 5px;
     margin-right: 5px;
     min-width: 15%;
     cursor: pointer;
