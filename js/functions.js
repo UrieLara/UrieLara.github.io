@@ -1,5 +1,5 @@
-const myCV_español = "assets/docs/CV_es.pdf";
-const myCV_english = "assets/docs/CV_en.pdf";
+const myCV_español = "assets/docs/CV_español.pdf";
+const myCV_english = "assets/docs/CV_english.pdf";
 const mail = "laracastrouriel@gmail.com";
 
 function CopyText() { 
