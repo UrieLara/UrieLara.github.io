@@ -22,10 +22,13 @@
             <label for="tab-home" onclick="scrollToElement('tab-home-content', 100)"><span class="tab-link" id="tab-home-text">Inicio</span></label>
             
             <input type="radio" id="tab-projects" name="tab-group">
-            <label for="tab-projects" onclick="scrollToElement('tab-projects-content', 100)"><span class="tab-link" id="tab-projects-text">Proyectos</span></label>
+            <label for="tab-projects" onclick="scrollToElement('tab-projects-content', 100)"><span class="tab-link" id="tab-projects-text">Proyectos Web</span></label>
             
             <input type="radio" id="tab-me" name="tab-group">
-            <label for="tab-me" onclick="scrollToElement('tab-me-content', 100)"><span class="tab-link" id="tab-me-text">Sobre mí</span></label>     
+            <label for="tab-me" onclick="scrollToElement('tab-projectsgame-content', 100)"><span class="tab-link" id="tab-projectsgame-text">Videojuegos</span></label>     
+
+            <input type="radio" id="tab-me" name="tab-group">
+            <label for="tab-me" onclick="scrollToElement('tab-me-content', 100)"><span class="tab-link" id="tab-me-text">Sobre mí</span></label>   
         </div> 
           
         <div class="tabs-content">
@@ -53,81 +56,126 @@
                     </div>
             </div>
     <br><hr><br>
-            <div id="tab-projects-content">
-                <h2 id="title-projects-text"> Proyectos </h2>
-                <div id="projects">
-                    <section id="project1">
-                        <img class="img-project" src="./assets/img_projects/building.png" alt="imagen de proyecto">
-                        <h4 id="project1-title-text">Tienda Online de Electrónica</h4>
-                        <div class="info-project">
-                            <p id="project1-p-text">En desarrollo... </p>
-                            <a href="https://github.com/UrieLara/ElectroShop.git" target="_blank"><img src="./assets/github-icon-white-circle.png" alt="link icon" class="btnlink icon"></a>
-                        </div>
-                    </section>
+    <br><div>
+        <h3 id="tech-title-text">Tecnologías</h3>
+        <div class="subgrid6x2">
+    
+            <div>
+                <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="logotech">
+                <span>C#</span>
+            </div>
+            <div>
+                <img src="./assets/logos_tech/netcore.png" alt="logo net core" class="logotech">
+                <span>.NET</span>
+            </div>
+            <div>
+                <img src="./assets/logos_tech/aspnet.png" alt="logo asp.net" class="logotech">
+                <span>ASP.NET</span>
+            </div>
+            <div>
+                <img src="./assets/logos_tech/sql.png" alt="logo SQL" class="logotech">
+                <span>SQL</span>
+            </div>
+            <div>
+                <img src="./assets/logos_tech/html.png" alt="logo HTML" class="logotech">
+                <span>HTML</span>
+            </div>
+            <div>
+                <img src="./assets/logos_tech/css.png" alt="logo CSS" class="logotech">
+                <span>CSS</span>
+            </div>
+            <div>
+                <img src="./assets/logos_tech/unity.png" alt="logo Unity" class="logotech">
+                <span>Unity</span>
+            </div>
+        </div>  
+    </div>
+
+        <div id="tab-projects-content"><!--WEB-->
+            <h2 id="title-projects-text"> Proyectos Web </h2>
+            <div class="projects">
+                <section id="projectweb1">
+                    <h3 id="projectweb1-title-text">Primer proyecto: tienda online</h3>
+                    <img class="img-project" src="./assets/img_projects/shop.png" alt="imagen de proyecto de tienda en línea">
+
+                <div class="info-project">
+                    <div style="display:flex"> 
+                        <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="icon">
+                        <img src="./assets/logos_tech/aspnet.png" alt="logo ASP.NET" class="icon">
+                        <img src="./assets/logos_tech/sql.png" alt="logo SQL" class="icon">
+                        <img src="./assets/logos_tech/html.png" alt="logo HTML" class="icon">
+                    </div>
+                    <p id="projectweb1-p-text"> descripción </p>
+                    <a href="https://github.com/UrieLara/ElectroShop.git" target="_blank"> Github <img src="./assets/github-icon-white-circle.png" alt="link icon" class="btnlink icon"></a>
                 </div>
-            </div>
+                </section>
+        </div>
+        </div>
+        
 
-            <br><div>
-                <h3 id="tech-title-text">Tecnologías</h3>
-                <div class="subgrid6x2">
+        <div id="tab-projectsgame-content"><!--VIDEOGAMES-->
+            <h2 id="title-projectsgame-text"> Proyectos de Videojuegos</h2>
+            <div class="projects">
+                <section id="projectgame1">
+                    <h3 id="projectgame1-title-text">Primer proyecto Videojuegos</h3>
+                    <img class="img-project-height" src="./assets/img_projects/punster.jpeg" alt="imagen de videojuego Punster">
+                    <div class="info-project">
+                        <div style="display:flex"> 
+                           <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="icon">
+                           <img src="./assets/logos_tech/unity.png" alt="logo Unity" class="icon">
+                        </div>
+                        <p id="projectgame1-p-text"> descripción </p>
+                        <a href="https://github.com/UrieLara/Punster_GGJ2024" target="_blank">Github<img src="./assets/github-icon-white-circle.png" alt="link icon" class="btnlink icon"></a>
+                    </div>
+                </section>
+                <br><br><br><br>
+                <section id="projectgame2">
+                    <h3 id="projectgame2-title-text">segundo proyecto Videojuegos</h3>
+                    <img class="img-project" src="./assets/img_projects/space.png" alt="imagen de videojuego Space Man">
+                    <div class="info-project">
+                        <div style="display:flex"> 
+                           <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="icon">
+                           <img src="./assets/logos_tech/unity.png" alt="logo Unity" class="icon">
+                        </div>
+                        <p id="projectgame2-p-text"> descripción </p>
+                        <a href="https://github.com/UrieLara/SpaceMan" target="_blank">Github<img src="./assets/github-icon-white-circle.png" alt="link icon" class="btnlink icon"></a>
+                    </div>
+                </section>
+        
+        </div>
+
+        <br><div id="tab-me-content">
+            <section>
+             <h2 id="about-me-title-text"> Sobre mí </h2>
+                 <p id="presentation-text">Presentación</p>
+             </section>
+
+             <section>
+                 <br><h2 id="experience-title-text"> Experiencia </h2>
+                 <p id="work1-text">Experiencia más actual</p>
+                 <p id="work2-text"> Penúltimo trabajo</p>
+                 <p id="work3-text"> Trabajo más antiguo </p>
+             </section>
             
-                    <div>
-                        <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="logotech">
-                        <span>C#</span>
-                    </div>
-                    <div>
-                        <img src="./assets/logos_tech/netcore.png" alt="logo net core" class="logotech">
-                        <span>.NET</span>
-                    </div>
-                    <div>
-                        <img src="./assets/logos_tech/aspnet.png" alt="logo asp.net" class="logotech">
-                        <span>ASP.NET</span>
-                    </div>
-                    <div>
-                        <img src="./assets/logos_tech/sql.png" alt="logo SQL" class="logotech">
-                        <span>SQL</span>
-                    </div>
-                    <div>
-                        <img src="./assets/logos_tech/html.png" alt="logo HTML" class="logotech">
-                        <span>HTML</span>
-                    </div>
-                    <div>
-                        <img src="./assets/logos_tech/css.png" alt="logo CSS" class="logotech">
-                        <span>CSS</span>
-                    </div>
-                </div>  
-            </div>
+             <section>
+                 <br><h2 id="certificates-title-text"> Certificados </h2>
+                 <div class="certificate-container">
+                     <button class="prev" onclick="moveSlide(-1)">&#9664;</button>
+                     <div class="certificate-slides" id="certificate-container"></div>
+                     <button class="next" onclick="moveSlide(1)">&#9654;</button>
+                 </div>                   
+             </section>
 
-            <br><div id="tab-me-content">
-               <section>
-                <h2 id="about-me-title-text"> Sobre mí </h2>
-                    <p id="presentation-text">Presentación</p>
-                </section>
-
-                <section>
-                    <br><h2 id="experience-title-text"> Experiencia </h2>
-                    <p id="work1-text">Experiencia más actual</p>
-                    <p id="work2-text"> Penúltimo trabajo</p>
-                    <p id="work3-text"> Trabajo más antiguo </p>
-                </section>
-               
-                <section>
-                    <br><h2 id="certificates-title-text"> Certificados </h2>
-                    <div class="certificate-container">
-                        <button class="prev" onclick="moveSlide(-1)">&#9664;</button>
-                        <div class="certificate-slides" id="certificate-container"></div>
-                        <button class="next" onclick="moveSlide(1)">&#9654;</button>
-                    </div>                   
-                </section>
-
-                <section>
-                    <br><h2 id="education-title-text"> Educacion </h2>
-                    <p id="schools-text">Estudios</p>
-                </section>
-            </div> 
+             <section>
+                 <br><h2 id="education-title-text"> Educacion </h2>
+                 <p id="schools-text">Estudios</p>
+             </section>
+         </div> 
+   
+            
         </div>
     
-    </div> 
+    </div> <!--tabs-->
 
     <br><hr><br>
     <footer>

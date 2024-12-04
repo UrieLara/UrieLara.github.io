@@ -12,17 +12,26 @@
 .icon{
     width: 2rem; 
     height: auto;
-    margin-right: 1rem;
+    margin: 0 0.3rem;
 }
 
 .logotech{
     width: 5rem;
-    height: auto;   
+    height: auto;
+    margin: 1rem 0;   
 }
 
 .img-project{
-    width: 13rem;
-    height: auto; 
+    width: 20rem;
+    height: auto;
+    margin: 0.5rem 0; 
+}
+
+.img-project-height
+{
+    width: auto;
+    height: 20rem; 
+    margin: 0.5rem 0; 
 }
 
 .iconfooter{
