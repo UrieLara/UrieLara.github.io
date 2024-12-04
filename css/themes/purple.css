@@ -44,12 +44,17 @@ body{
 }
 
     .email a, .email button:hover { 
-        color:var(--color-text);
+        color:var(--color-hover);
     }
 
 
 a{
     font-family: 'Open Sans', sans-serif;  
+    color:var(--color-title);
+}
+
+a:hover{
+    color:var(--color-hover);
 }
 
 .tab-link{
