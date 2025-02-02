@@ -1,27 +1,27 @@
-#language-selector{
+#language-selector {
     position: absolute;
     top: 0;
     right: 1%;
     cursor: pointer;
-   
+
 }
 
-#language-dropdown { 
-    padding: 1%; 
+#language-dropdown {
+    padding: 1%;
     font-size: 1rem;
     border: none;
 }
 
-.fixed-container{
-    display: flex; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 90%; 
+.fixed-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
     z-index: 1000;
 }
 
-#tab-home-content{
+#tab-home-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -29,7 +29,7 @@
     align-items: center;
 }
 
-.projects{
+.projects {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -42,24 +42,24 @@
     justify-items: center;
 }
 
-h1{
+h1 {
     font-size: 4.5rem;
     margin: 3rem 0px 0px 0px;
 }
 
-.subtitle{
-    margin-bottom: 2rem; 
-    margin-top:0px;
+.subtitle {
+    margin-bottom: 2rem;
+    margin-top: 0px;
     text-align: left;
 }
 
-h2{
+h2 {
     padding-left: 8%;
     font-size: 2rem;
     margin: 3rem 0px 1.5rem 0px;
 }
 
-h3{
+h3 {
     text-align: center;
     font-size: 1.3rem;
     display: flex;
@@ -67,15 +67,15 @@ h3{
     margin: 0.5rem;
 }
 
-h4{
+h4 {
     margin: .3rem;
 }
 
-.links{
+.links {
     display: inline-flex;
 }
 
-.email{
+.email {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -83,7 +83,7 @@ h4{
     margin: .5rem 0px .5rem 0px;
 }
 
-.email a{
+.email a {
     font-size: 1rem;
 }
 
@@ -97,34 +97,52 @@ a {
     justify-items: center;
     justify-content: center;
     padding: 0.5rem;
-  }
+}
 
-  .subgrid6x2 div {
+.subgrid6x2 div {
     display: grid;
     align-items: center;
     justify-items: center;
     margin-right: 2.5rem;
 }
 
-.info-project{
+.subgrid4x2 {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    justify-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.subgrid4x2 div {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.info-project {
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-a{
-       display: flex;
-        align-items: center;
-        margin: 0.3rem;
-    }
+a {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem;
+}
 
 p {
     text-align: justify;
     padding: 0px 10% 0px 10%;
 }
 
-ul{
+ul {
     text-align: justify;
     padding-right: 3%;
 }
@@ -134,35 +152,35 @@ hr {
     width: 99%;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 
-    .fixed-container{
-        width: 80%; 
+    .fixed-container {
+        width: 80%;
     }
 
-    body{
+    body {
         margin: 1rem;
     }
 
     #tab-home-content {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
-    } 
-
-    h1{
-        font-size: 3rem;     
     }
 
-    h2{
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
         font-size: 1.5rem;
     }
 
-    .email a{
+    .email a {
         font-size: 1rem;
     }
 
 
-    .email{
+    .email {
         margin: 5px 0px 5px 5px;
     }
 
@@ -170,5 +188,8 @@ hr {
         margin-right: 1rem;
     }
 
-}
+    .subgrid4x2 div {
+        margin-right: 1rem;
+    }
 
+}

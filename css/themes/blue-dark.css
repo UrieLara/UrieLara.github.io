@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
 :root {
     --color-backg: #130E1F;
     --color-background-2: #150d2b;
     --color-text: #e0e0e0;
 
-    --color-principal: #5529b3;
-    --color-secondary: #281952;
-    --color-hover: #d3a7ff;
-    --color-button: #7a46c7;
-    --color-third: #6F2C86;
-    --color-title: #ca8bf5;
-    /*#6804fd; */
-    /*#6F2C86*/
+    --color-principal: #007dff;
+    --color-secondary: #02375a;
+    --color-hover: #6ba8e6;
+    --color-button: #2792fd;
+    --color-third: #1b4c81;
+    --color-title: #4da6ff;
 }
 
 #language-dropdown {
@@ -35,7 +39,7 @@ body {
 }
 
 .fixed-container label:hover {
-    background-color: var(--color-hover);
+    background-color: var(--color-background-2);
 
 }
 
@@ -56,31 +60,27 @@ a {
     color: var(--color-title);
 }
 
-a:hover {
-    color: var(--color-hover);
-}
-
 .tab-link {
     color: var(--color-principal);
     font-weight: 700;
 }
 
 h1 {
-    color: var(--color-title);
-    font-family: "Roboto Slab", sans-serif;
-    font-weight: 200;
+    color: var(--color-text);
+    font-family: "Saira", serif;
+    font-weight: 500;
 
 }
 
 h2 {
-    color: var(--color-hover);
-    font-family: "Gugi", sans-serif;
+    color: var(--color-title);
+    font-family: "Oxanium", serif;
 
 }
 
 h3 {
     color: var(--color-hover);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Turret Road', serif;
 }
 
 body {
@@ -117,4 +117,8 @@ button.next {
 
 .close {
     color: var(--color-button);
+}
+
+.text {
+    color: var(--color-text);
 }

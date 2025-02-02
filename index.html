@@ -1,195 +1,191 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/> 
-        <link rel="stylesheet" href="./css/main.css">
-        <title> UrieLara </title>
-    </head>
 
-    <header> 
-        <div id="language-selector"> 
-            <select id="language-dropdown" onchange="setLanguage(this.value)"> 
-                <option value="es">ES</option> 
-                <option value="en">EN</option> 
-            </select>
-        </div>
-    </header>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title> UrieLara </title>
+</head>
 
-    <body> 
-    <div class = "tabs">
+<header>
+    <div id="language-selector">
+        <select id="language-dropdown" onchange="setLanguage(this.value)">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+        </select>
+    </div>
+</header>
+
+<body>
+    <div class="tabs"> <!--NavMenu-->
         <div class="fixed-container">
             <input type="radio" id="tab-home" name="tab-group" checked>
-            <label for="tab-home" onclick="scrollToElement('tab-home-content', 100)"><span class="tab-link" id="tab-home-text">Inicio</span></label>
-            
+            <label for="tab-home" onclick="scrollToElement('tab-home-content', 100)"><span class="tab-link"
+                    id="tab-home-text">Inicio</span></label>
+
             <input type="radio" id="tab-projects" name="tab-group">
-            <label for="tab-projects" onclick="scrollToElement('tab-projects-content', 100)"><span class="tab-link" id="tab-projects-text">Proyectos Web</span></label>
-            
-            <input type="radio" id="tab-me" name="tab-group">
-            <label for="tab-me" onclick="scrollToElement('tab-projectsgame-content', 100)"><span class="tab-link" id="tab-projectsgame-text">Videojuegos</span></label>     
+            <label for="tab-projects" onclick="scrollToElement('tab-projects-content', 100)"><span class="tab-link"
+                    id="tab-projects-text">Proyectos Web</span></label>
 
             <input type="radio" id="tab-me" name="tab-group">
-            <label for="tab-me" onclick="scrollToElement('tab-me-content', 100)"><span class="tab-link" id="tab-me-text">Sobre mí</span></label>   
-        </div> 
-          
+            <label for="tab-me" onclick="scrollToElement('tab-me-content', 100)"><span class="tab-link"
+                    id="tab-me-text">Sobre mí</span></label>
+        </div>
+
         <div class="tabs-content">
-            <div id="tab-home-content"> 
-                    <div id="presentation">
-                        <h1> Uriel Lara Castro </h1>
-                        <h2 class="subtitle" id="profession-text"> Desarrollador Web Jr </h2>
+            <div id="tab-home-content">
+                <div id="presentation">
+                    <h1> Uriel Lara Castro </h1>
+                    <h2 class="subtitle" id="profession-text"> Desarrollador </h2>
 
-                        <div class="email">
-                            <a href="mailto:laracastrouriel@gmail.com" class="btn"><img src="./assets/mail-icon-white.png" alt="email icon" style="width: 25px;">
-                                <span style="margin-left: 8px;"></span>laracastrouriel@gmail.com</a>
-                            <button onclick="CopyText()" class="btn"><img src="./assets/copy-icon-white.png" alt="copy icon"></button>
-                            <p id="hide-text" class="hide" style="font-size: 15px;" id="copy-email-text">Copiado 👍</p>
-                        </div>
-                        
-                        <div class="links">
-                            <a href="https://www.linkedin.com/in/uriel-lara-castro/" target="_blank" class="btn"><img src="./assets/linkedin-icon-white.png" alt="linkedin icon" class="icon">Linkedin</a>
-                            <a href="https://github.com/UrieLara" target="_blank" class="btn"><img src="./assets/github-icon-white.png" alt="github icon" class="icon">GitHub</a>
-                            <button onclick="downloadDocument('CV Uriel Lara Castro.pdf')"  class="btn"><img src="./assets/download-icon-white.png" alt="download icon" class="icon"><span id="download-cv-text">Descargar CV</span></button>
-                        </div>
+                    <div class="email">
+                        <a href="mailto:laracastrouriel@gmail.com" class="btn"><img src="./assets/mail-icon-white.png"
+                                alt="email icon" style="width: 25px;">
+                            <span style="margin-left: 8px;" class="text">laracastrouriel@gmail.com</span></a>
+                        <button onclick="CopyText()" class="btn"><img src="./assets/copy-icon-white.png"
+                                alt="copy icon"></button>
+                        <p id="hide-text" class="hide" style="font-size: 15px;" id="copy-email-text">Copiado 👍</p>
                     </div>
-                                         
-                    <div class="photo-me">
-                            <img class="photo" src="./assets/fotome.png">        
-                    </div>
-            </div>
-    <br><hr><br>
-    <br><div>
-        <h3 id="tech-title-text">Tecnologías</h3>
-        <div class="subgrid6x2">
-    
-            <div>
-                <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="logotech">
-                <span>C#</span>
-            </div>
-            <div>
-                <img src="./assets/logos_tech/netcore.png" alt="logo net core" class="logotech">
-                <span>.NET</span>
-            </div>
-            <div>
-                <img src="./assets/logos_tech/aspnet.png" alt="logo asp.net" class="logotech">
-                <span>ASP.NET</span>
-            </div>
-            <div>
-                <img src="./assets/logos_tech/sql.png" alt="logo SQL" class="logotech">
-                <span>SQL</span>
-            </div>
-            <div>
-                <img src="./assets/logos_tech/html.png" alt="logo HTML" class="logotech">
-                <span>HTML</span>
-            </div>
-            <div>
-                <img src="./assets/logos_tech/css.png" alt="logo CSS" class="logotech">
-                <span>CSS</span>
-            </div>
-            <div>
-                <img src="./assets/logos_tech/unity.png" alt="logo Unity" class="logotech">
-                <span>Unity</span>
-            </div>
-        </div>  
-    </div>
 
-        <div id="tab-projects-content"><!--WEB-->
-            <h2 id="title-projects-text"> Proyectos Web </h2>
-            <div class="projects">
-                <section id="projectweb1">
-                    <h3 id="projectweb1-title-text">Primer proyecto: tienda online</h3>
-                    <img class="img-project" src="./assets/img_projects/shop.png" alt="imagen de proyecto de tienda en línea">
-
-                <div class="info-project">
-                    <div style="display:flex"> 
-                        <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="icon">
-                        <img src="./assets/logos_tech/aspnet.png" alt="logo ASP.NET" class="icon">
-                        <img src="./assets/logos_tech/sql.png" alt="logo SQL" class="icon">
-                        <img src="./assets/logos_tech/html.png" alt="logo HTML" class="icon">
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/uriel-lara-castro/" target="_blank" class="btn"><img
+                                src="./assets/linkedin-icon-white.png" alt="linkedin icon" class="icon">Linkedin</a>
+                        <a href="https://github.com/UrieLara" target="_blank" class="btn"><img
+                                src="./assets/github-icon-white.png" alt="github icon" class="icon">GitHub</a>
+                        <button onclick="downloadDocument('CV Uriel Lara Castro.pdf')" class="btn"><img
+                                src="./assets/download-icon-white.png" alt="download icon" class="icon"><span
+                                id="download-cv-text">Descargar CV</span></button>
                     </div>
-                    <p id="projectweb1-p-text"> descripción </p>
-                    <a href="https://github.com/UrieLara/ElectroShop.git" target="_blank"> <img src="./assets/github-icon-white-circle.png" alt="link icon" class="btnlink icon"> Github</a>
                 </div>
-                </section>
-        </div>
-        </div>
-        
 
-        <div id="tab-projectsgame-content"><!--VIDEOGAMES-->
-            <h2 id="title-projectsgame-text"> Proyectos de Videojuegos</h2>
-            <div class="projects">
-                <section id="projectgame1">
-                    <h3 id="projectgame1-title-text">Primer proyecto Videojuegos</h3>
-                    <img class="img-project-height" src="./assets/img_projects/punster.jpeg" alt="imagen de videojuego Punster">
-                    <div class="info-project">
-                        <div style="display:flex"> 
-                           <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="icon">
-                           <img src="./assets/logos_tech/unity.png" alt="logo Unity" class="icon">
+                <div class="photo-me">
+                    <img class="photo" src="./assets/fotome.png">
+                </div>
+            </div>
+            <br>
+            <hr><br>
+            <br>
+            <div> <!--TECNOLOGIAS-->
+                <h3 id="tech-title-text">Tecnologías</h3>
+                <div class="subgrid4x2">
+                    <div>
+                        <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="logotech"><span>C#</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/netcore.png" alt="logo net core"
+                            class="logotech"><span>.NET</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/aspnet.png" alt="logo asp.net"
+                            class="logotech"><span>ASP.NET</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/sql.png" alt="logo SQL" class="logotech"><span>SQL</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/html.png" alt="logo HTML" class="logotech"><span>HTML</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/css.png" alt="logo CSS" class="logotech"><span>CSS</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/js.png" alt="logo Javascript"
+                            class="logotech"><span>Javascript</span>
+                    </div>
+                    <div>
+                        <img src="./assets/logos_tech/blazor.png" alt="logo Blazor" class="logotech"><span>Blazor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--WEB-->
+            <div id="tab-projects-content">
+                <h2 id="title-projects-text"> Proyectos Web </h2>
+                <div class="projects">
+                    <!--PRIMER PROYECTO-->
+                    <section id="projectweb1">
+                        <h3 id="projectweb1-title-text">Primer proyecto: Musares</h3>
+                        <img class="img-project" src="./assets/img_projects/musares.webp" alt="página web musares a.c.">
+
+                        <div class="info-project">
+                            <p id="projectweb1-p-text"> descripción </p>
+                            <div style="display:flex">
+                                <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="icon-project">
+                                <img src="./assets/logos_tech/aspnet.png" alt="logo ASP.NET" class="icon-project">
+                                <img src="./assets/logos_tech/blazor.png" alt="logo Blazor" class="icon-project">
+                                <img src="./assets/logos_tech/html.png" alt="logo HTML" class="icon-project">
+                                <img src="./assets/logos_tech/css.png" alt="logo CSS" class="icon-project">
+                            </div>
+                            <a href="https://musarespuebla.azurewebsites.net/" target="_blank"> <img
+                                    src="./assets/link-icon-white.png" alt="link icon" class="btnlink icon">👈
+                            </a>
+
+
                         </div>
-                        <p id="projectgame1-p-text"> descripción </p>
-                        <a href="https://github.com/UrieLara/Punster_GGJ2024" target="_blank"><img src="./assets/github-icon-white-circle.png" alt="link icon" class="btnlink icon">Github</a>
+                    </section>
+                </div>
+            </div>
+
+            <!--SOBRE MI-->
+            <br>
+            <div id="tab-me-content">
+                <section>
+                    <h2 id="about-me-title-text"> Sobre mí </h2>
+                    <p id="presentation-text">Presentación</p>
+                    <i>
+                        <p id="quote-text"> Cita </p>
+                    </i>
+                </section>
+
+                <section>
+                    <br>
+                    <h2 id="experience-title-text"> Experiencia </h2>
+                    <p id="work1-text">Experiencia más actual</p>
+                    <p id="work2-text"> Penúltimo trabajo</p>
+                    <p id="work3-text"> Trabajo más antiguo </p>
+                </section>
+
+                <section>
+                    <br>
+                    <h2 id="certificates-title-text"> Certificados </h2>
+                    <div class="certificate-container">
+                        <button class="prev" onclick="moveSlide(-1)">&#9664;</button>
+                        <div class="certificate-slides" id="certificate-container"></div>
+                        <button class="next" onclick="moveSlide(1)">&#9654;</button>
                     </div>
                 </section>
-                <br><br><br><br>
-                <section id="projectgame2">
-                    <h3 id="projectgame2-title-text">segundo proyecto Videojuegos</h3>
-                    <img class="img-project" src="./assets/img_projects/space.png" alt="imagen de videojuego Space Man">
-                    <div class="info-project">
-                        <div style="display:flex"> 
-                           <img src="./assets/logos_tech/csharp.png" alt="logo C#" class="icon">
-                           <img src="./assets/logos_tech/unity.png" alt="logo Unity" class="icon">
-                        </div>
-                        <p id="projectgame2-p-text"> descripción </p>
-                        <a href="https://github.com/UrieLara/SpaceMan" target="_blank"><img src="./assets/github-icon-white-circle.png" alt="link icon" class="btnlink icon">Github</a>
-                    </div>
+
+                <section>
+                    <br>
+                    <h2 id="education-title-text"> Educacion </h2>
+                    <p id="schools-text">Estudios</p>
                 </section>
-        
+            </div>
+
+
         </div>
 
-        <br><div id="tab-me-content">
-            <section>
-             <h2 id="about-me-title-text"> Sobre mí </h2>
-                 <p id="presentation-text">Presentación</p>
-             </section>
-
-             <section>
-                 <br><h2 id="experience-title-text"> Experiencia </h2>
-                 <p id="work1-text">Experiencia más actual</p>
-                 <p id="work2-text"> Penúltimo trabajo</p>
-                 <p id="work3-text"> Trabajo más antiguo </p>
-             </section>
-            
-             <section>
-                 <br><h2 id="certificates-title-text"> Certificados </h2>
-                 <div class="certificate-container">
-                     <button class="prev" onclick="moveSlide(-1)">&#9664;</button>
-                     <div class="certificate-slides" id="certificate-container"></div>
-                     <button class="next" onclick="moveSlide(1)">&#9654;</button>
-                 </div>                   
-             </section>
-
-             <section>
-                 <br><h2 id="education-title-text"> Educacion </h2>
-                 <p id="schools-text">Estudios</p>
-             </section>
-         </div> 
-   
-            
-        </div>
-    
     </div> <!--tabs-->
 
-    <br><hr><br>
+    <br>
+    <hr><br>
     <footer>
         <h4>Uriel Lara Castro</h4>
-        <a href="mailto:laracastrouriel@gmail.com" class="btnfooter email"><img src="./assets/mail-icon-white.png" alt="email icon" style="width: 25px;">
+        <a href="mailto:laracastrouriel@gmail.com" class="btnfooter email"><img src="./assets/mail-icon-white.png"
+                alt="email icon" style="width: 25px;">
             <span style="margin-left: 8px;"></span>laracastrouriel@gmail.com</a>
-        <button onclick="downloadDocument('CV_Uriel Lara Castro.pdf')" class="btnfooter"><img src="./assets/download-icon-white.png" alt="download icon" class="iconfooter"></button>
-        <a href="https://www.linkedin.com/in/uriel-lara-castro/" target="_blank" class="btnfooter"><img src="./assets/linkedin-icon-white.png" alt="linkedin icon" class="iconfooter"></a>
-        <a href="https://github.com/UrieLara" target="_blank" class="btnfooter"><img src="./assets/github-icon-white.png" alt="github icon" class="iconfooter"></a>
-    </div>
+        <button onclick="downloadDocument('CV_Uriel Lara Castro.pdf')" class="btnfooter"><img
+                src="./assets/download-icon-white.png" alt="download icon" class="iconfooter"></button>
+        <a href="https://www.linkedin.com/in/uriel-lara-castro/" target="_blank" class="btnfooter"><img
+                src="./assets/linkedin-icon-white.png" alt="linkedin icon" class="iconfooter"></a>
+        <a href="https://github.com/UrieLara" target="_blank" class="btnfooter"><img
+                src="./assets/github-icon-white.png" alt="github icon" class="iconfooter"></a>
+        </div>
     </footer>
 
     <script src="./js/certificates.js" defer></script>
     <script src="./js/functions.js" defer></script>
     <script src="./js/translate.js" defer></script>
-    </body>
+</body>
+
 </html>
